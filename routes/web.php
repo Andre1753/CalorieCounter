@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FoodController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['register' => false]);
 
-Route::resource('food', FoodController::class);
+Route::get('login', ['as' => 'login', 'uses' => 'App\Http\Controllers\HomeController@login']);
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/vue', [App\Http\Controllers\HomeController::class, 'vue'])->name('vue');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
+Route::resource('food', FoodController::class);

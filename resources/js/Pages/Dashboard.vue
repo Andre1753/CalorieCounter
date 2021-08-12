@@ -1,15 +1,20 @@
 <template>
+    <layout>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    Esta é a pagina principal
-                    <inertia-link :href="$route('login')" method="get" class="dropdown-item">Logar</inertia-link>
+                    Dashboard
                 </div>
             </div>
         </div>
+    </layout>
 </template>
 
 <script>
+import Layout from './../Shared/Layout.vue'
 export default {
+    components: {
+        Layout,
+    }
 }
 </script>

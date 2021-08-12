@@ -24,16 +24,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return Inertia::render('Home');
     }
 
-    public function vue()
+    public function login()
     {
-        $data = [
-            'nome' => 'André',
-            'sobrenome' => 'Luiz',
-        ];
+        return Inertia::render('Auth/Login');
+    }
 
-        return Inertia::render('teste/Vue', $data);
+    public function dashboard()
+    {
+        return Inertia::render('Dashboard');
     }
 }
