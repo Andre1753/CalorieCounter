@@ -36,11 +36,10 @@ class FoodController extends Controller
         return redirect()->route('food.index');
     }
 
-    public function show(Food $food)
+    public function destroy(Food $food)
     {
-        return Inertia::render('Foods/Show', [
-            'food' => $food,
-        ]);
+       $food->delete();
+        return redirect()->route('food.index');
     }
 
     // public function update(Request $request)

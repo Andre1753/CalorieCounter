@@ -2853,6 +2853,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -2874,6 +2909,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Shared_Layout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../Shared/Layout.vue */ "./resources/js/Shared/Layout.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -2992,55 +3031,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__.default
   },
   props: ["foods"]
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Show.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Show.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Shared_Layout_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Shared/Layout.vue */ "./resources/js/Shared/Layout.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['food'],
-  components: {
-    Layout: _Shared_Layout_vue__WEBPACK_IMPORTED_MODULE_0__.default
-  }
 });
 
 /***/ }),
@@ -3067,6 +3063,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -3082,7 +3079,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
 //
 //
 //
@@ -40127,6 +40123,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/object-inspect/index.js":
 /*!**********************************************!*\
   !*** ./node_modules/object-inspect/index.js ***!
@@ -43721,45 +43730,6 @@ component.options.__file = "resources/js/Pages/Foods/Index.vue"
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Foods/Show.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/Pages/Foods/Show.vue ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Show_vue_vue_type_template_id_01a46000___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=01a46000& */ "./resources/js/Pages/Foods/Show.vue?vue&type=template&id=01a46000&");
-/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Foods/Show.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Show_vue_vue_type_template_id_01a46000___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Show_vue_vue_type_template_id_01a46000___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Pages/Foods/Show.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Home.vue":
 /*!*************************************!*\
   !*** ./resources/js/Pages/Home.vue ***!
@@ -43902,22 +43872,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Foods/Show.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/Pages/Foods/Show.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Show.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
-
-/***/ }),
-
 /***/ "./resources/js/Pages/Home.vue?vue&type=script&lang=js&":
 /*!**************************************************************!*\
   !*** ./resources/js/Pages/Home.vue?vue&type=script&lang=js& ***!
@@ -44014,23 +43968,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_76d8a6df___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_76d8a6df___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index.vue?vue&type=template&id=76d8a6df& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Index.vue?vue&type=template&id=76d8a6df&");
-
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Foods/Show.vue?vue&type=template&id=01a46000&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/Pages/Foods/Show.vue?vue&type=template&id=01a46000& ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_01a46000___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_01a46000___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_01a46000___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Show.vue?vue&type=template&id=01a46000& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Show.vue?vue&type=template&id=01a46000&");
 
 
 /***/ }),
@@ -44297,12 +44234,147 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("layout", [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12" }, [
-          _vm._v("\n                Dashboard\n            ")
-        ])
-      ])
+    _c("div", { staticClass: "bg-green-100 py-14" }, [
+      _c(
+        "div",
+        { staticClass: "md:flex md:justify-center md:space-x-8 md:px-14" },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0"
+            },
+            [
+              _c("div", { staticClass: "w-sm" }, [
+                _c("img", {
+                  staticClass: "w-64",
+                  attrs: {
+                    src:
+                      "https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a17abde8d83650a582a28432/users-with-speech-bubbles-vector_53876-82250.jpg",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "mt-4 text-green-600 text-center" },
+                  [
+                    _c("h1", { staticClass: "text-xl font-bold" }, [
+                      _vm._v("Alimentos")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-4 text-gray-600" }, [
+                      _vm._v(
+                        "Aqui você pode adicionar e examinar a tabela nutricional dos alimentos."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "inertia-link",
+                      {
+                        staticClass:
+                          "btn mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200",
+                        attrs: { href: _vm.$route("food.index") }
+                      },
+                      [_vm._v("Ver Mais")]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0"
+            },
+            [
+              _c("div", { staticClass: "w-sm" }, [
+                _c("img", {
+                  staticClass: "w-64",
+                  attrs: {
+                    src:
+                      "https://images01.nicepage.com/c461c07a441a5d220e8feb1a/3b242447f922540fbe750cab/fdf.jpg",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "mt-4 text-green-600 text-center" },
+                  [
+                    _c("h1", { staticClass: "text-xl font-bold" }, [
+                      _vm._v("Refeições")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "mt-4 text-gray-600" }, [
+                      _vm._v(
+                        "Aqui você adiciona as refeições do dia, para que o nosso sistema possa calcular sua ingestão calorica "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "inertia-link",
+                      {
+                        staticClass:
+                          "btn mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200",
+                        attrs: { href: _vm.$route("food.index") }
+                      },
+                      [_vm._v("Ver Mais")]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0"
+            },
+            [
+              _c("div", { staticClass: "w-sm" }, [
+                _c("img", {
+                  staticClass: "w-64",
+                  attrs: {
+                    src:
+                      "https://images01.nicepage.com/c461c07a441a5d220e8feb1a/8cc47b39e719570b996d9879/dsds.jpg",
+                    alt: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "mt-4 text-green-600 text-center" }, [
+                  _c("h1", { staticClass: "text-xl font-bold" }, [
+                    _vm._v("Happy Customers")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-4 text-gray-600" }, [
+                    _vm._v(
+                      "Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel elit scelerisque mauris."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200"
+                    },
+                    [_vm._v("MORE")]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      )
     ])
   ])
 }
@@ -44332,12 +44404,14 @@ var render = function() {
   return _c("layout", [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row mb-3" }, [
-        _c("div", { staticClass: "col-md-12" }, [
-          _c("h1", { staticClass: "float-left" }, [_vm._v("Adicionar Comida")])
+        _c("div", { staticClass: "row" }, [
+          _c("h1", { staticClass: "float-left text-xl text-blue-600" }, [
+            _vm._v("Adicionar Comida")
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "row justify-content-right" }, [
         _c(
           "form",
           {
@@ -44349,169 +44423,175 @@ var render = function() {
             }
           },
           [
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "name" } }, [_vm._v("Nome")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.name,
-                    expression: "form.name"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  id: "name",
-                  name: "name",
-                  placeholder: "Nome da comida"
-                },
-                domProps: { value: _vm.form.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+            _c("div", { staticClass: "grid grid-cols-2 gap-4" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "name" } }, [_vm._v("Nome")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.name,
+                      expression: "form.name"
                     }
-                    _vm.$set(_vm.form, "name", $event.target.value)
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    id: "name",
+                    name: "name",
+                    placeholder: "Nome da comida"
+                  },
+                  domProps: { value: _vm.form.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "name", $event.target.value)
+                    }
                   }
-                }
-              })
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "name" } }, [_vm._v("Quantidade")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.amount,
+                      expression: "form.amount"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    id: "amount",
+                    name: "amount",
+                    step: "any",
+                    placeholder: "Quantidade da comida"
+                  },
+                  domProps: { value: _vm.form.amount },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "amount", $event.target.value)
+                    }
+                  }
+                })
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "name" } }, [_vm._v("Quantidade")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.amount,
-                    expression: "form.amount"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "number",
-                  id: "amount",
-                  name: "amount",
-                  step: "any",
-                  placeholder: "Quantidade da comida"
-                },
-                domProps: { value: _vm.form.amount },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+            _c("div", { staticClass: "grid grid-cols-3 gap-4" }, [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "name" } }, [
+                  _vm._v("Carboidrato")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.carbohydrate,
+                      expression: "form.carbohydrate"
                     }
-                    _vm.$set(_vm.form, "amount", $event.target.value)
-                  }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "name" } }, [_vm._v("Carboidrato")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.carbohydrate,
-                    expression: "form.carbohydrate"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "number",
-                  id: "carbohydrate",
-                  name: "carbohydrate",
-                  step: "any",
-                  placeholder: "Carboidrato na comida"
-                },
-                domProps: { value: _vm.form.carbohydrate },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    id: "carbohydrate",
+                    name: "carbohydrate",
+                    step: "any",
+                    placeholder: "Carboidrato na comida"
+                  },
+                  domProps: { value: _vm.form.carbohydrate },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "carbohydrate", $event.target.value)
                     }
-                    _vm.$set(_vm.form, "carbohydrate", $event.target.value)
                   }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "name" } }, [_vm._v("Proteina")]),
+                })
+              ]),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.protein,
-                    expression: "form.protein"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "number",
-                  id: "protein",
-                  name: "protein",
-                  step: "any",
-                  placeholder: "Proteina na comida"
-                },
-                domProps: { value: _vm.form.protein },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "name" } }, [_vm._v("Proteina")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.protein,
+                      expression: "form.protein"
                     }
-                    _vm.$set(_vm.form, "protein", $event.target.value)
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    id: "protein",
+                    name: "protein",
+                    step: "any",
+                    placeholder: "Proteina na comida"
+                  },
+                  domProps: { value: _vm.form.protein },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "protein", $event.target.value)
+                    }
                   }
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("label", { attrs: { for: "name" } }, [_vm._v("Gordura")]),
+                })
+              ]),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.fat,
-                    expression: "form.fat"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "number",
-                  id: "fat",
-                  name: "fat",
-                  step: "any",
-                  placeholder: "Gordura na comida"
-                },
-                domProps: { value: _vm.form.fat },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "name" } }, [_vm._v("Gordura")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.fat,
+                      expression: "form.fat"
                     }
-                    _vm.$set(_vm.form, "fat", $event.target.value)
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    id: "fat",
+                    name: "fat",
+                    step: "any",
+                    placeholder: "Gordura na comida"
+                  },
+                  domProps: { value: _vm.form.fat },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "fat", $event.target.value)
+                    }
                   }
-                }
-              })
+                })
+              ])
             ]),
             _vm._v(" "),
             _c(
               "button",
-              { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-              [_vm._v("Enviar")]
+              { staticClass: "btn bg-indigo-600", attrs: { type: "submit" } },
+              [_vm._v("Adicionar")]
             )
           ]
         )
@@ -44549,7 +44629,9 @@ var render = function() {
           "div",
           { staticClass: "col-md-12" },
           [
-            _c("h1", { staticClass: "float-left" }, [_vm._v("Comidas")]),
+            _c("h1", { staticClass: "float-left text-xl" }, [
+              _vm._v("Comidas")
+            ]),
             _vm._v(" "),
             _c(
               "inertia-link",
@@ -44565,102 +44647,67 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12" }, [
-          _c(
-            "table",
-            { staticClass: "table table-bordered bg-white" },
-            [
-              _c("tr", [
-                _c("th", [_vm._v("Id")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Nome")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Quantidade")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Carboidrato")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Proteina")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Gordura")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Calorias")])
-              ]),
+        _c(
+          "table",
+          { staticClass: "table table-bordered bg-white" },
+          [
+            _c("tr", [
+              _c("th", [_vm._v("Id")]),
               _vm._v(" "),
-              _vm._l(_vm.foods, function(food) {
-                return _c("tr", { key: food.id }, [
-                  _c("td", [_vm._v(_vm._s(food.id))]),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    [
-                      _c(
-                        "inertia-link",
-                        {
-                          attrs: {
-                            href: _vm.$route("food.show", { food: food })
-                          }
-                        },
-                        [_vm._v(_vm._s(food.name))]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(food.amount))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(food.carbohydrate))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(food.protein))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(food.fat))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(food.calories))])
-                ])
-              })
-            ],
-            2
-          )
-        ])
+              _c("th", [_vm._v("Nome")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Quantidade")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Carboidrato")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Proteina")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Gordura")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Calorias")]),
+              _vm._v(" "),
+              _c("th")
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.foods, function(food) {
+              return _c("tr", { key: food.id }, [
+                _c("td", [_vm._v(_vm._s(food.id))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(food.name))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(food.amount))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(food.carbohydrate))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(food.protein))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(food.fat))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(food.calories))]),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  [
+                    _c(
+                      "inertia-link",
+                      {
+                        staticClass: "btn bg-red-600 text-white",
+                        attrs: {
+                          href: _vm.$route("food.destroy", { food: food }),
+                          method: "delete"
+                        }
+                      },
+                      [_c("i", { staticClass: "fas fa-trash" })]
+                    )
+                  ],
+                  1
+                )
+              ])
+            })
+          ],
+          2
+        )
       ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Show.vue?vue&type=template&id=01a46000&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Foods/Show.vue?vue&type=template&id=01a46000& ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* binding */ render),
-/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("layout", [
-    _c("div", [
-      _vm._v("\n        " + _vm._s(_vm.food.name)),
-      _c("br"),
-      _vm._v("              \n        " + _vm._s(_vm.food.amount) + " "),
-      _c("br"),
-      _vm._v("        \n        " + _vm._s(_vm.food.carbohydrate) + " "),
-      _c("br"),
-      _vm._v("        \n        " + _vm._s(_vm.food.protein) + " "),
-      _c("br"),
-      _vm._v("        \n        " + _vm._s(_vm.food.fat) + " "),
-      _c("br"),
-      _vm._v("        \n        " + _vm._s(_vm.food.calories) + "\n    ")
     ])
   ])
 }
@@ -44793,15 +44840,6 @@ var render = function() {
                           "inertia-link",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: _vm.$route("food.index") }
-                          },
-                          [_vm._v("Comidas")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
-                            staticClass: "dropdown-item",
                             attrs: {
                               href: _vm.$route("logout"),
                               method: "post"
@@ -44822,7 +44860,7 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("main", { staticClass: "py-4" }, [_vm._t("default")], 2)
+    _c("main", [_vm._t("default")], 2)
   ])
 }
 var staticRenderFns = [
@@ -57025,8 +57063,6 @@ var map = {
 	"./Foods/Create.vue": "./resources/js/Pages/Foods/Create.vue",
 	"./Foods/Index": "./resources/js/Pages/Foods/Index.vue",
 	"./Foods/Index.vue": "./resources/js/Pages/Foods/Index.vue",
-	"./Foods/Show": "./resources/js/Pages/Foods/Show.vue",
-	"./Foods/Show.vue": "./resources/js/Pages/Foods/Show.vue",
 	"./Home": "./resources/js/Pages/Home.vue",
 	"./Home.vue": "./resources/js/Pages/Home.vue"
 };
@@ -57235,7 +57271,8 @@ webpackContext.id = "./resources/js/Pages sync recursive ^\\.\\/.*$";
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

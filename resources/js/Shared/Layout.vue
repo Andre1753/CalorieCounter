@@ -20,7 +20,6 @@
                                 Minha Conta
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <inertia-link :href="$route('food.index')" class="dropdown-item">Comidas</inertia-link>
                                 <inertia-link :href="$route('logout')" method="post" class="dropdown-item">Logout</inertia-link>
                             </div>
                         </li>
@@ -29,7 +28,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             <slot />
         </main>
     </div>

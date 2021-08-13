@@ -21,4 +21,7 @@ Route::get('login', ['as' => 'login', 'uses' => 'App\Http\Controllers\HomeContro
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
-Route::resource('food', FoodController::class);
+
+Route::resource('food', FoodController::class, [
+    'except' => [ 'show' ]]
+);
