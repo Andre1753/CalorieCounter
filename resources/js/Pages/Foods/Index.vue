@@ -29,7 +29,10 @@
               <td>{{food.fat}}</td>
               <td>{{food.calories}}</td>
               <td>
-                <inertia-link :href="$route('food.destroy', {food: food})" method="delete" class="btn bg-red-600 text-white">
+                <inertia-link :href="$route('food.update', {food: food})" class="btn bg-yellow-400 text-white">
+                  <i class="fas fa-edit"></i>
+                </inertia-link>
+                <inertia-link :href="$route('food.destroy', {food: food})" method="delete" class="btn bg-red-600 text-white ml-1">
                   <i class="fas fa-trash"></i>
                 </inertia-link>
               </td>

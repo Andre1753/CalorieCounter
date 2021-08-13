@@ -22,16 +22,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return Inertia::render('Home');
-    }
-
-    public function login()
-    {
-        return Inertia::render('Auth/Login');
-    }
-
+    
     public function dashboard()
     {
         return Inertia::render('Dashboard');

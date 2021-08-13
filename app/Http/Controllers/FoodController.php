@@ -42,6 +42,11 @@ class FoodController extends Controller
         return redirect()->route('food.index');
     }
 
+    public function edit(Food $food)
+    {
+        
+    }
+
     // public function update(Request $request)
     // {
     //     $rules = $this->validations;
