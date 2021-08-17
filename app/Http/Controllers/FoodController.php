@@ -9,6 +9,19 @@ use Inertia\Inertia;
 
 class FoodController extends Controller
 {
+    private $validations;
+
+    public function __construct()
+    {
+        $this->validations = [
+            'name' => 'required',
+            'amount' => 'required' ,
+            'carbohydrate' => 'required',
+            'protein' => 'required',
+            'fat' => 'required',
+        ];
+    }
+
     public function index(Request $request)
     {
         return Inertia::render('Foods/Index', [
@@ -23,15 +36,7 @@ class FoodController extends Controller
 
     public function store(Request $request)
     {
-        Food::create(
-            $request->validate([
-                'name' => 'required',
-                'amount' => 'required' ,
-                'carbohydrate' => 'required',
-                'protein' => 'required',
-                'fat' => 'required',
-            ])
-        );
+        Food::create($this->validate($request, $this->validations));
 
         return redirect()->route('food.index');
     }
@@ -44,22 +49,18 @@ class FoodController extends Controller
 
     public function edit(Food $food)
     {
-        
+        return Inertia::render('Foods/Create', []);
     }
 
-    // public function update(Request $request)
-    // {
-    //     $rules = $this->validations;
-    //     $rules['id'] = 'required|exists:leads';
+    public function update(Request $request)
+    {
+        $rules = $this->validations;
+        $rules['id'] = 'required|exists:food';
 
-    //     $postData = $this->validate($request, $rules);
-    //     $postData['age'] = Carbon::parse($postData['dob'])->age;
+        $postData = $this->validate($request, $rules);
 
-    //     $lead = Lead::where('id', $postData['id'])
-    //         ->update($postData);
+        Food::FindOrFail($postData['id'])->update($postData);
 
-    //     return redirect()
-    //         ->route('lead.view', ['lead' => $postData['id']])
-    //         ->with('success', 'Your chages are saved now.');
-    // }
+        return redirect()->route('food.index');
+    }
 }

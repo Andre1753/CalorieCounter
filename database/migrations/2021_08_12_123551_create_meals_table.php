@@ -15,7 +15,12 @@ class CreateMealsTable extends Migration
     {
         Schema::create('meals', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->double('amount');
+            
+            $table->unsignedBigInteger('food_id')->nullable();
+            $table->foreign('food_id')->references('id')->on('food');
+
+            $table->dateTime('created_at', $precision = 0);
         });
     }
 

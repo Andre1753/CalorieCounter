@@ -22,6 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function index()
+    {
+        return Inertia::render('Home');
+    }
     
     public function dashboard()
     {

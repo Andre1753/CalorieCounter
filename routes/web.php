@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FoodController;
+use App\Http\Controllers\MealController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,7 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard
 Route::resource('food', FoodController::class, [
     'except' => [ 'show' ]]
 );
+
+Route::resource('meal', MealController::class, [
+    'except' => [ 'show' ]]
+);  

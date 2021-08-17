@@ -2,41 +2,48 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Food;
 use App\Models\Meal;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class MealController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    private $validations;
+
+    public function __construct()
     {
-        //
+        $this->validations = [
+            'name' => 'required',
+            'amount' => 'required' ,
+            'carbohydrate' => 'required',
+            'protein' => 'required',
+            'fat' => 'required',
+        ];
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function index(Request $request)
+    {
+        return Inertia::render('Meals/Index', [
+            'meals' => Meal::all(),
+        ]);
+    }
+
     public function create()
     {
-        //
+        return Inertia::render('Meals/Create', [
+            'foods' => Food::all(),
+        ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        dd($request);
+        Food::create($this->validate($request, $this->validations));
+
+        return redirect()->route('food.index');
     }
+
 
     /**
      * Display the specified resource.

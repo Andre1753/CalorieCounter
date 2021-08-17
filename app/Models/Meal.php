@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Meal extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+    
+    protected $fillable = [
+        'amount',
+        'food_id',
+        'created_at',
+    ];
 }
