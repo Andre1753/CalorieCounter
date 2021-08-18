@@ -20,7 +20,11 @@ class CreateMealsTable extends Migration
             $table->unsignedBigInteger('food_id')->nullable();
             $table->foreign('food_id')->references('id')->on('food');
 
-            $table->dateTime('created_at', $precision = 0);
+            $table->double('carbohydrate')->nullable();
+            $table->double('protein')->nullable();
+            $table->double('fat')->nullable();
+            $table->double('calories')->nullable();
+            $table->dateTime('created_at');
         });
     }
 

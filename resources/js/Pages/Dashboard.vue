@@ -24,7 +24,7 @@
                         <div class="mt-4 text-green-600 text-center">
                             <h1 class="text-xl font-bold">Refeições</h1>
                             <p class="mt-4 text-gray-600">Aqui você adiciona as refeições do dia, para que o nosso sistema possa calcular sua ingestão calorica </p>
-                            <inertia-link :href="$route('food.index')" class="btn mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200">Ver Mais</inertia-link>
+                            <inertia-link :href="$route('meal.index')" class="btn mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200">Ver Mais</inertia-link>
                         </div>
                     </div>
                 </div>

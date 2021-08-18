@@ -17,6 +17,7 @@ class CreateFoodTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->double('amount');
+            $table->string('unit');
             $table->double('carbohydrate');
             $table->double('protein');
             $table->double('fat');

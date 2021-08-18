@@ -16,4 +16,9 @@ class Meal extends Model
         'food_id',
         'created_at',
     ];
+
+    public function food()
+    {
+        return $this->belongsTo(Food::class, 'food_id');
+    }
 }

@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Models\Food;
+use App\Models\Meal;
 use App\Observers\FoodObserver;
+use App\Observers\MealObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -30,5 +32,6 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         Food::observe(FoodObserver::class);
+        Meal::observe(MealObserver::class);
     }
 }

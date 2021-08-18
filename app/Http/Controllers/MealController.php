@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Food;
 use App\Models\Meal;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
 
 class MealController extends Controller
@@ -22,26 +25,50 @@ class MealController extends Controller
         ];
     }
 
-    public function index(Request $request)
+    public function calendar()
+    {
+        return Inertia::render('Meals/Calendar', [
+            'month_names' => ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+            'day_names' => ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+        ]);
+    }
+
+    public function index()
     {
         return Inertia::render('Meals/Index', [
             'meals' => Meal::all(),
         ]);
     }
 
-    public function create()
+    public function create($date)
     {
         return Inertia::render('Meals/Create', [
             'foods' => Food::all(),
+            'date' => $date
         ]);
     }
 
-    public function store(Request $request)
+    public function store(Request $request) 
     {
-        dd($request);
-        Food::create($this->validate($request, $this->validations));
+        foreach($request->all() as $req)
+        {
+            $validator = Validator::make($req,[
+                'amount' => 'required',
+                'food_id' => 'required',
+                'created_at' => 'required'
+            ]);
 
-        return redirect()->route('food.index');
+            if ($validator->fails())
+            {
+                return redirect()->route('meal.create')->withErrors($validator);
+            }
+            else
+            {
+                Meal::create($req);
+            }
+        }
+
+        return redirect()->route('meal.index');
     }
 
 
@@ -87,6 +114,8 @@ class MealController extends Controller
      */
     public function destroy(Meal $meal)
     {
-        //
+        $meal->delete();
+        return redirect()->route('meal.index');
+
     }
 }

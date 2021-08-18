@@ -26,5 +26,7 @@ Route::resource('food', FoodController::class, [
 );
 
 Route::resource('meal', MealController::class, [
-    'except' => [ 'show' ]]
+    'except' => [ 'show', 'create' ]]
 );  
+Route::get('/meal/create/{date}', [App\Http\Controllers\MealController::class, 'create'])->name('meal.create');
+Route::get('/meal/calendar', [App\Http\Controllers\MealController::class, 'calendar'])->name('meal.calendar');
