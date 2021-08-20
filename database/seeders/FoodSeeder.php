@@ -19,7 +19,7 @@ class FoodSeeder extends Seeder
                 'id' => 1,
                 'name' => 'Arroz',
                 'amount' => 100,
-                'unit' => 'G',
+                'unit' => 'g',
                 'carbohydrate' => 28,
                 'protein' => 2.7,
                 'fat' => 0.3
@@ -29,7 +29,7 @@ class FoodSeeder extends Seeder
                 'id' => 2,
                 'name' => 'Frango',
                 'amount' => 100,
-                'unit' => 'G',
+                'unit' => 'g',
                 'carbohydrate' => 2,
                 'protein' => 25,
                 'fat' => 2
@@ -39,7 +39,7 @@ class FoodSeeder extends Seeder
                 'id' => 3,
                 'name' => 'Macarrão Integral Vilma',
                 'amount' => 100,
-                'unit' => 'G',
+                'unit' => 'g',
                 'carbohydrate' => 72.5,
                 'protein' => 12.25,
                 'fat' => 1.5
@@ -49,7 +49,7 @@ class FoodSeeder extends Seeder
                 'id' => 4,
                 'name' => 'Mandioquinha',
                 'amount' => 100,
-                'unit' => 'G',
+                'unit' => 'g',
                 'carbohydrate' => 25,
                 'protein' => 0.9,
                 'fat' => 0.2
@@ -59,18 +59,17 @@ class FoodSeeder extends Seeder
                 'id' => 5,
                 'name' => 'Patinho',
                 'amount' => 100,
-                'unit' => 'G',
+                'unit' => 'g',
                 'carbohydrate' => 1,
                 'protein' => 31.9,
                 'fat' => 4.6,
-                'unit' => 'G'
             ]);
 
             Food::create([
                 'id' => 6,
                 'name' => 'Pão de Queijo',
                 'amount' => 100,
-                'unit' => 'G',
+                'unit' => 'g',
                 'carbohydrate' => 45,
                 'protein' => 10,
                 'fat' => 21,

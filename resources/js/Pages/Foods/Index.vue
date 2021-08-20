@@ -23,7 +23,7 @@
             <tr v-for="food in foods" :key="food.id"> 
               <td>{{food.id}}</td>
               <td>{{food.name}}</td>
-              <td>{{food.amount}}</td>
+              <td>{{food.amount}}{{food.unit}}</td>
               <td>{{food.carbohydrate}}</td>
               <td>{{food.protein}}</td>
               <td>{{food.fat}}</td>

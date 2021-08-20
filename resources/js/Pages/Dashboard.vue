@@ -24,7 +24,7 @@
                         <div class="mt-4 text-green-600 text-center">
                             <h1 class="text-xl font-bold">Refeições</h1>
                             <p class="mt-4 text-gray-600">Aqui você adiciona as refeições do dia, para que o nosso sistema possa calcular sua ingestão calorica </p>
-                            <inertia-link :href="$route('meal.index')" class="btn mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200">Ver Mais</inertia-link>
+                            <inertia-link :href="$route('meal.calendar')" class="btn mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200">Ver Mais</inertia-link>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     <div class="w-sm">
                         <img class="w-64" src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/8cc47b39e719570b996d9879/dsds.jpg" alt="" />
                         <div class="mt-4 text-green-600 text-center">
-                            <h1 class="text-xl font-bold">Happy Customers</h1>
+                            <h1 class="text-xl font-bold">blablabal</h1>
                             <p class="mt-4 text-gray-600">Nisl purus in mollis nunc sed id semper. Rhoncus aenean vel elit scelerisque mauris.</p>
                             <button class="mt-8 mb-4 py-2 px-14 rounded-full bg-green-600 text-white tracking-widest hover:bg-green-500 transition duration-200">MORE</button>
                         </div>

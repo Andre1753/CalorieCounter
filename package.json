@@ -28,6 +28,7 @@
     "dependencies": {
         "@inertiajs/inertia": "^0.10.1",
         "@inertiajs/inertia-vue": "^0.7.2",
+        "moment": "^2.29.1",
         "tailwindcss": "^2.2.7",
         "vue": "^2.6.14"
     }

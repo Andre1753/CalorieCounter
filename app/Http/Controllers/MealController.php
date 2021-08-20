@@ -28,9 +28,13 @@ class MealController extends Controller
     public function calendar()
     {
         return Inertia::render('Meals/Calendar', [
-            'month_names' => ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-            'day_names' => ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+            'month_names' => ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
         ]);
+    }
+
+    public function teste()
+    {
+        return Inertia::render('Meals/teste', []);
     }
 
     public function index()
