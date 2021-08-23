@@ -10,12 +10,14 @@
                         <label for="name">Horario</label>
                         <input required type="time" class="form-control" name="created_at[]" v-model="form.created_at" step="any" placeholder="Proteina na comida">
                         <span v-if="$page.props.errors.created_at">{{ $page.props.errors.created_at}}</span>
+                        {{form.created_at}}
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="form-group">
                             <label for="name">Quantidade</label>
                             <input type="number" class="form-control" name="amount[]" v-model="form.amount" step="any" placeholder="Quantidade da comida">
                             <span v-if="$page.props.errors.amount">{{$page.props.errors.amount}}</span> 
+                            {{form.amount}}
                         </div>
                         <div class="form-group">
                             <label for="name">Comida</label>
@@ -23,6 +25,7 @@
                                 <option v-for="food in foods" :key="food.id" :value="food.id">{{food.name}}</option>
                             </select>
                             <span v-if="$page.props.errors.food_id">{{ $page.props.errors.food_id}}</span> 
+                            {{form.food_id}}
                         </div>  
                     </div>                    
                 </div>

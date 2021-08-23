@@ -3343,6 +3343,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['foods', 'date'],
@@ -67180,7 +67183,12 @@ var render = function() {
                   ? _c("span", [
                       _vm._v(_vm._s(_vm.$page.props.errors.created_at))
                     ])
-                  : _vm._e()
+                  : _vm._e(),
+                _vm._v(
+                  "\n                    " +
+                    _vm._s(form.created_at) +
+                    "\n                "
+                )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "grid grid-cols-2 gap-4" }, [
@@ -67220,7 +67228,12 @@ var render = function() {
                     ? _c("span", [
                         _vm._v(_vm._s(_vm.$page.props.errors.amount))
                       ])
-                    : _vm._e()
+                    : _vm._e(),
+                  _vm._v(
+                    " \n                        " +
+                      _vm._s(form.amount) +
+                      "\n                    "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
@@ -67273,7 +67286,12 @@ var render = function() {
                     ? _c("span", [
                         _vm._v(_vm._s(_vm.$page.props.errors.food_id))
                       ])
-                    : _vm._e()
+                    : _vm._e(),
+                  _vm._v(
+                    " \n                        " +
+                      _vm._s(form.food_id) +
+                      "\n                    "
+                  )
                 ])
               ])
             ])
