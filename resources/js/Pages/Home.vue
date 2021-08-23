@@ -9,7 +9,9 @@
                 </div>
                 <div class="space-y-4">
                     <input type="email" v-model="form.email" name="email" placeholder="Email" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" required />
+                    <span v-if="$page.props.errors.email != null">{{ $page.props.errors.email}}</span>
                     <input type="password" v-model="form.password" name="password" placeholder="Senha" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" required />
+                    <span v-if="$page.props.errors.password != null">{{ $page.props.errors.password}}</span>
                 </div>
                 <div class="text-center mt-6">
                     <button type="submit" class="py-3 w-64 text-xl text-white bg-purple-400 rounded-2xl">Entrar</button>

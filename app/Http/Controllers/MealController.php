@@ -28,7 +28,7 @@ class MealController extends Controller
     public function calendar()
     {
         return Inertia::render('Meals/Calendar', [
-            'month_names' => ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
+            'foods' => Food::all()
         ]);
     }
 
@@ -52,8 +52,14 @@ class MealController extends Controller
         ]);
     }
 
-    public function store(Request $request) 
+    public function createModal()
     {
+        return Inertia::render('Meals/create-modal', []);
+    }
+
+    public function store(Request $request, $date) 
+    {
+        dd($request->all(), $date);
         foreach($request->all() as $req)
         {
             $validator = Validator::make($req,[
@@ -66,10 +72,7 @@ class MealController extends Controller
             {
                 return redirect()->route('meal.create')->withErrors($validator);
             }
-            else
-            {
-                Meal::create($req);
-            }
+            Meal::create($req);
         }
 
         return redirect()->route('meal.index');
@@ -120,6 +123,5 @@ class MealController extends Controller
     {
         $meal->delete();
         return redirect()->route('meal.index');
-
     }
 }

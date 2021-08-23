@@ -4,7 +4,9 @@ import Vue from 'vue'
 import { createInertiaApp } from '@inertiajs/inertia-vue'
 import { Link } from '@inertiajs/inertia-vue'
 import moment from 'moment'
+import $ from 'jquery';
 
+window.jQuery = window.$ = $;
 Vue.prototype.$route = route
 Vue.component('inertia-link', Link);
 Vue.prototype.moment = moment;

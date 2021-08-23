@@ -26,9 +26,9 @@ Route::resource('food', FoodController::class, [
 );
 
 Route::resource('meal', MealController::class, [
-    'except' => [ 'show', 'create' ]]
+    'except' => [ 'show', 'create', 'store' ]]
 );  
-Route::get('/meal/create/{date}', [App\Http\Controllers\MealController::class, 'create'])->name('meal.create');
+Route::post('/meal/store/{date}', [App\Http\Controllers\MealController::class, 'store'])->name('meal.store');
 Route::get('/meal/calendar', [App\Http\Controllers\MealController::class, 'calendar'])->name('meal.calendar');
-Route::get('/meal/teste', [App\Http\Controllers\MealController::class, 'teste'])->name('meal.teste');
+Route::get('/meal/createModal', [App\Http\Controllers\MealController::class, 'createModal'])->name('meal.createModal');
 
