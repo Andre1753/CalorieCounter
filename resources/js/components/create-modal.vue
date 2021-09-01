@@ -5,13 +5,12 @@
         </div>  
         <div class="row justify-content-right">
             <form @submit.prevent="submit">                
+                <div class="form-group"> 
+                    <label for="name">Horario</label>
+                    <input required type="time" class="form-control" name="created_at" v-model="created_at" step="any" placeholder="Proteina na comida">
+                    <span v-if="$page.props.errors.created_at">{{ $page.props.errors.created_at}}</span>
+                </div>
                 <div v-for="(form, index) in forms" :key="index">
-                    <div class="form-group"> 
-                        <label for="name">Horario</label>
-                        <input required type="time" class="form-control" name="created_at[]" v-model="form.created_at" step="any" placeholder="Proteina na comida">
-                        <span v-if="$page.props.errors.created_at">{{ $page.props.errors.created_at}}</span>
-                        {{form.created_at}}
-                    </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="form-group">
                             <label for="name">Quantidade</label>
@@ -45,7 +44,8 @@
         },  
         data() {
             return {
-                forms: [{amount: null, food_id: null, created_at: ""}],
+                forms: [{amount: null, food_id: null}],
+                created_at: ""
             }
         },
         methods: {
@@ -62,7 +62,7 @@
                 this.forms.push({amount: null, food_id: null});
             },
             submit() {
-                this.$inertia.post(`/meal/store/${this.date}`, this.forms);
+                this.$inertia.post(`/meal/store/${this.date}`, [this.created_at, this.forms]);
             },
         },
     }

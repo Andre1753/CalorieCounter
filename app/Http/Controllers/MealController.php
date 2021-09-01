@@ -59,9 +59,17 @@ class MealController extends Controller
 
     public function store(Request $request, $date) 
     {
-        dd($request->all(), $date);
-        foreach($request->all() as $req)
+        $requests = $request->all();
+
+        $hour = $requests[0];
+        $data = $requests[1];
+
+        $fullDate = $date .' '. $hour;
+        $finalDate = Carbon::createFromFormat('dmY H:i', $fullDate);
+        
+        foreach($data as $req)
         {
+            $req['created_at'] = $finalDate;
             $validator = Validator::make($req,[
                 'amount' => 'required',
                 'food_id' => 'required',
@@ -70,12 +78,12 @@ class MealController extends Controller
 
             if ($validator->fails())
             {
-                return redirect()->route('meal.create')->withErrors($validator);
+                return redirect()->route('meal.createModal')->withErrors($validator);
             }
             Meal::create($req);
         }
 
-        return redirect()->route('meal.index');
+        return redirect()->route('meal.calendar');
     }
 
 

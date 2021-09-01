@@ -3125,6 +3125,7 @@ __webpack_require__.r(__webpack_exports__);
     createEvent: function createEvent(date) {
       var modal = this.$refs.modal;
       this.date = date;
+      console.log(date, this.date);
       this.foods = this.foods;
       modal.showModal();
     }
@@ -3345,7 +3346,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['foods', 'date'],
@@ -3356,9 +3356,9 @@ __webpack_require__.r(__webpack_exports__);
     return {
       forms: [{
         amount: null,
-        food_id: null,
-        created_at: ""
-      }]
+        food_id: null
+      }],
+      created_at: ""
     };
   },
   methods: {
@@ -3378,7 +3378,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     submit: function submit() {
-      this.$inertia.post("/meal/store/".concat(this.date), this.forms);
+      this.$inertia.post("/meal/store/".concat(this.date), [this.created_at, this.forms]);
     }
   }
 });
@@ -66785,9 +66785,11 @@ var render = function() {
                           on: {
                             click: function($event) {
                               _vm.createEvent(
-                                day +
+                                (day < 10 ? "0" + day : day) +
                                   "" +
-                                  (_vm.month.month() + 1) +
+                                  (_vm.month.month() + 1 < 10
+                                    ? "0" + (_vm.month.month() + 1)
+                                    : _vm.month.month() + 1) +
                                   "" +
                                   _vm.month.year()
                               )
@@ -67146,51 +67148,44 @@ var render = function() {
           }
         },
         [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "name" } }, [_vm._v("Horario")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.created_at,
+                  expression: "created_at"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: {
+                required: "",
+                type: "time",
+                name: "created_at",
+                step: "any",
+                placeholder: "Proteina na comida"
+              },
+              domProps: { value: _vm.created_at },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.created_at = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
+            _vm.$page.props.errors.created_at
+              ? _c("span", [_vm._v(_vm._s(_vm.$page.props.errors.created_at))])
+              : _vm._e()
+          ]),
+          _vm._v(" "),
           _vm._l(_vm.forms, function(form, index) {
             return _c("div", { key: index }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "name" } }, [_vm._v("Horario")]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: form.created_at,
-                      expression: "form.created_at"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    required: "",
-                    type: "time",
-                    name: "created_at[]",
-                    step: "any",
-                    placeholder: "Proteina na comida"
-                  },
-                  domProps: { value: form.created_at },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(form, "created_at", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _vm.$page.props.errors.created_at
-                  ? _c("span", [
-                      _vm._v(_vm._s(_vm.$page.props.errors.created_at))
-                    ])
-                  : _vm._e(),
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(form.created_at) +
-                    "\n                "
-                )
-              ]),
-              _vm._v(" "),
               _c("div", { staticClass: "grid grid-cols-2 gap-4" }, [
                 _c("div", { staticClass: "form-group" }, [
                   _c("label", { attrs: { for: "name" } }, [

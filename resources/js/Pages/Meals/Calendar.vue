@@ -19,7 +19,7 @@
         <div class="flex items-start w-full h-full px-2 pt-2.5 pb-24 border border-gray-200" v-for="day in daysgenerater()" :key="day.index">
           <div class="w-full items-center"> 
             <span class="text-sm font-medium text-gray-800 float-left">{{day}}</span>
-            <button @click="createEvent(day+''+(month.month()+1)+''+month.year())" ref="button" v-if="day != ''" class="btn-sm rounded-full bg-yellow-500 text-sm font-medium text-white float-right "><i class="fas fa-plus"></i></button>              
+            <button @click="createEvent((day < 10 ? '0'+day : day) +''+(month.month()+1 < 10 ? '0'+(month.month()+1) : (month.month()+1))+''+month.year())" ref="button" v-if="day != ''" class="btn-sm rounded-full bg-yellow-500 text-sm font-medium text-white float-right "><i class="fas fa-plus"></i></button>              
           </div>
         </div>
       </div>
@@ -84,6 +84,7 @@
       createEvent(date){
         var modal = this.$refs.modal;
         this.date = date;  
+        console.log(date, this.date);
         this.foods = this.foods;      
         modal.showModal();
       }                
